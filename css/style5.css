@@ -1,0 +1,388 @@
+/*Her definerer jeg mine farver*/
+:root {
+  --brown: #362a23;
+  --beige: #bfb497;
+  }
+
+/*Baggrunds-tekstur*/
+body {
+  background: var(--brown);
+  background-image: url("../images/tekstur2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+/*Her styler jeg min navbar*/
+/*Logo computer*/
+.logo img {
+  margin-top: 2%;
+  max-width: 75%;
+  align-items: center;
+  margin-left: -20px;
+  }
+
+/*Menubar computer*/
+  nav{
+  display: flex;
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-family: 'Lora', serif;
+}
+
+  nav li {
+  list-style-type: none;
+  display: inline;
+  justify-content: space-around;
+  text-align: center;
+  font-family: 'Lora', serif;
+    }
+
+  a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.8);
+  margin: 40px;
+  color: var(--beige);
+  margin-top: 100px;
+  margin: 75px;
+  font-family: 'Lora', serif;
+   }
+
+  a:hover {
+    text-decoration: underline;
+    }
+
+    .line {
+      margin-top: -90px;
+      position: absolute;
+      z-index: -1;
+      }
+
+    /*Styling af tekst og billeder*/
+    .container {
+      margin: 150px auto;
+      width: 75%;
+      padding: 8px;
+    }
+
+    .container img {
+      float: right;
+      max-width: 50%;
+      max-height: 50%;
+      padding: 0 0 0 40px;
+      margin-top: -60px;
+    }
+
+    .text {
+      text-align: justify;
+      color: var(--beige);
+      margin-top: -80px;
+    }
+
+    .text p {
+      text-align: justify;
+      color: var(--beige);
+      font-size: 20px;
+      margin-top: 47px;
+        }
+
+    .text h3 {
+      color: var(--beige);
+      font-style: italic;
+      margin-top: 50px;
+      line-height: 30px;
+      }
+
+      text h1 {
+      color: var(--beige);
+      margin-top: 75px;
+      text-decoration: underline;
+        }
+
+    .container2 {
+      margin: 150px auto;
+      width: 75%;
+      padding: 8px;
+      margin-top: -20px;
+    }
+
+    .container2 img {
+      float: right;
+      max-width: 50%;
+      max-height: 50%;
+      padding: 0 0 0 40px;
+      margin-top: 180px;
+    }
+
+    .text2 {
+      text-align: justify;
+      color: var(--beige);
+      margin-top: -100px;
+    }
+
+    .text2 p {
+      text-align: justify;
+      color: var(--beige);
+      font-size: 18px;
+    }
+
+    .text2 h3 {
+      font-style: normal;
+      }
+
+
+    .text4 {
+    color: var(--beige);
+    line-height: 30px;
+    margin-left: 175px;
+    margin-top: -100px;
+      }
+
+    .text4 ol {
+      margin-left: -25px;
+      font-size: 18px;
+      margin-bottom: 100px;
+      }
+
+      /*Fjerner indhold til mobil og tablet*/
+        .text3 {
+          display: none;
+          }
+
+        .container3 {
+          display: none;
+          }
+
+        .containermob img {
+          display: none;
+          }
+
+        .textmob {
+          display: none;
+          }
+
+        .textmob2 {
+          display: none;
+          }
+
+        .container2mob img {
+          display: none;
+          }
+
+        .text2mob {
+          display: none;
+          }
+
+        .container4mob {
+          display: none;
+          }
+
+        .text4mob {
+          display: none;
+          }
+
+        .pynt {
+          display: none;
+          }
+
+      /*Styling af footer*/
+      footer {
+        background-color: var(--brown);
+        padding: 50px;
+        text-align: center;
+        color: var(--beige);
+        display: block;
+        }
+
+
+/*Skalering af indhold til tablet*/
+@media screen and (max-width: 920px) {
+
+      /*Logo og burgermenu*/
+      .text3 {
+        display: block;
+        margin-top: -330px;
+        margin-left: 220px;
+        max-width: 75%;
+        }
+
+      .container3 {
+        display: block;
+        font-size: 75px;
+        padding-left: 40px;
+        }
+
+      /*Fjerner menubar*/
+      nav {
+        display: none;
+        }
+
+     .line {
+        display: none;
+        }
+
+      /*Opløser kolonner og stabler tekst og billeder*/
+      .containermob img {
+        display: block;
+        max-width: 90%;
+        margin-left: 40px;
+        margin-top: 75px;
+        }
+
+      .container {
+        display: none;
+        }
+
+      .textmob {
+        display: block;
+        color: var(--beige);
+        text-align: center;
+        font-size: 28px;
+        text-decoration: underline;
+        }
+
+      .textmob2 {
+        display: block;
+        color: var(--beige);
+        text-align: left;
+        font-style: italic;
+        font-size: 25px;
+        margin-top: 75px;
+        padding-left: 40px;
+        padding-right: 27px;
+        }
+
+      .text {
+        display: none;
+        }
+
+      .container2 {
+        display: none;
+        }
+
+      .text2 {
+        display: none;
+        }
+
+      .container2mob img {
+        display: block;
+        max-width: 90%;
+        margin-left: 40px;
+        margin-top: 75px;
+        }
+
+      .text2mob {
+        display: block;
+        color: var(--beige);
+        text-align: left;
+        margin-left: 40px;
+        font-size: 25px;
+        margin-top: 75px;
+        }
+
+      .container4mob {
+        display: block;
+        }
+
+      .text4mob {
+        display: block;
+        color: var(--beige);
+        font-size: 25px;
+        margin-top: 75px;
+        margin-left: 40px;
+        padding-right: 27px;
+        }
+
+      .text2 {
+        display: none;
+        }
+
+      .container4 {
+        display: none;
+        }
+
+      .pynt img {
+        display: block;
+        }
+    }
+
+/*Skalering af indhold til mobil*/
+@media screen and (max-width: 600px) {
+
+  /*Logo og burgermenu*/
+    .text3 {
+      margin-left: 80px;
+      margin-top: -205px;
+      }
+
+    .container3 {
+      font-size: 50px;
+      padding-left: 40px;
+      }
+
+    /*Opløser kolonner og stabler tekst og billeder*/
+      .containermob img {
+        display: block;
+        max-width: 78%;
+        margin-left: 40px;
+        margin-top: 50px;
+        }
+
+
+      .textmob {
+        display: block;
+        color: var(--beige);
+        text-align: center;
+        font-size: 11.5px;
+        text-decoration: underline;
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+
+      .textmob2 {
+        display: block;
+        color: var(--beige);
+        text-align: left;
+        font-style: italic;
+        font-size: 15px;
+        margin-top: 50px;
+        padding-left: 40px;
+        padding-right: 30px;
+        }
+
+      .container2mob img {
+        display: block;
+        max-width: 78%;
+        margin-left: 40px;
+        margin-top: 50px;
+        }
+
+      .text2mob {
+        display: block;
+        color: var(--beige);
+        text-align: left;
+        margin-left: 40px;
+        font-size: 20px;
+        margin-top: 50px;
+        }
+
+      .container4mob {
+        display: block;
+        }
+
+      .text4mob {
+        display: block;
+        color: var(--beige);
+        font-size: 20px;
+        margin-top: 50px;
+        margin-left: 40px;
+        padding-right: 30px;
+        }
+
+      .pynt img {
+        display: block;
+        }
+
+  }

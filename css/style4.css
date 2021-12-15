@@ -1,0 +1,263 @@
+/*Her definerer jeg mine farver*/
+:root {
+  --brown: #362a23;
+  --beige: #bfb497;
+  }
+
+/*Baggrunds-tekstur*/
+body {
+  background: var(--brown);
+  background-image: url("../images/tekstur2.png");
+  background-size: contain;
+  background-repeat: repeat;
+  font-family: 'Lora', serif;
+  }
+
+/*Logo computer*/
+.logo img {
+  margin-top: 2%;
+  max-width: 75%;
+  align-items: center;
+  margin-left: -20px;
+  }
+
+/*Menubar computer*/
+  nav{
+  display: flex;
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-family: 'Lora', serif;
+}
+
+  nav li {
+  list-style-type: none;
+  display: inline;
+  justify-content: space-around;
+  text-align: center;
+  font-family: 'Lora', serif;
+    }
+
+  a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.8);
+  margin: 40px;
+  color: var(--beige);
+  margin-top: 100px;
+  margin: 75px;
+  font-family: 'Lora', serif;
+   }
+
+  a:hover {
+    text-decoration: underline;
+    }
+
+  .line {
+    margin-top: -65px;
+    position: absolute;
+    z-index: -1;
+    }
+
+  /*Styling af sidens indhold - overskrifter, teaser tekst og billeder*/
+  h1 {
+    color: var(--beige);
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 75px;
+    font-family: 'Lora', serif;
+    }
+
+  h3 {
+    color: var(--beige);
+    font-style: italic;
+    text-align: center;
+    font-family: 'Lora', serif;
+    }
+
+/*Her sætter jeg de tre billeder i en række*/
+    .row {
+    display: flex;
+    align-items: center;
+  }
+
+  .column {
+    flex: 33.33%;
+    padding: 10px;
+    margin-bottom: 75px;
+    margin-top: 50px;
+  }
+
+/*Her tilføjer jeg en fade overlay*/
+  .image {
+    position: relative;
+    width: 75%;
+    margin-left: 50px;
+    }
+
+  .image__img {
+    display: block;
+    width: 100%;
+    }
+
+  .image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 91%;
+    margin-top: 18px;
+    background: rgba(0,0,0, 0.6);
+    color: var(--beige);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    font-family: 'Lora', serif;
+    transition: opacity 0.25s;
+    }
+
+  .image__overlay:hover {
+    opacity: 1;
+    }
+
+  .image__title {
+    font-size: 2em;
+    font-weight: bold;
+    }
+
+/*Indhold til tablet og mobil - skal skjules*/
+  .text3 {
+    display: none;
+      }
+  .container3 {
+    display: none;
+    }
+
+  .recipe img {
+    display: none;
+    }
+
+  .recipe h2 {
+    display: none;
+    }
+
+/*Styling af footer*/
+  footer {
+    background-color: var(--brown);
+    padding: 50px;
+    text-align: center;
+    color: var(--beige);
+     }
+
+
+/*Skalering af indhold til tablet*/
+@media screen and (max-width: 920px) {
+
+ /*Logo og burgermenu*/
+  .text3 {
+    display: block;
+    margin-top: -330px;
+    margin-left: 220px;
+    }
+
+   .container3 {
+    display: block;
+    font-size: 75px;
+    padding-left: 40px;
+    }
+
+/*Skalering af billeder og tekst*/
+    h3 {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+    }
+
+/*Fjerner menubar*/
+    nav {
+    display: none;
+    }
+
+   .line {
+    display: none;
+    }
+
+/*Skjuler indhold til mobil*/
+  .recipe h2 {
+    display: none;
+    }
+
+/*Skalering af overlay og titel*/
+  .image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 82%;
+   }
+
+  .image__title {
+   font-size: 1em;
+   }
+
+  .image {
+   margin-left: 30px;
+   }
+
+  }
+
+  /*Skalering af indhold til mobil*/
+  @media screen and (max-width: 600px) {
+
+    /*Logo og burgermenu*/
+       .text3 {
+         display: block;
+         margin-top: -195px;
+         margin-left: 100px;
+         }
+
+      .container3 {
+         display: block;
+         font-size: 50px;
+         margin-left: -30px;
+         }
+
+  /*Skalering af tekst og billeder*/
+      h1 {
+        font-size: 20px;
+        margin-top: 40px;
+      }
+
+      h3 {
+        font-size: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
+      .recipe img {
+        display: block;
+        max-width: 75%;
+        margin-left: 37px;
+        margin-bottom: 20px;
+        margin-top: -20px;
+        }
+
+      .recipe h2 {
+        display: block;
+        color: var(--beige);
+        margin-top: 50px;
+        text-align: center;
+        margin-top: 70px;
+        font-size: 15px;
+        }
+
+
+/*Skjuler indhold fra stor skærm*/
+      .row {
+        display: none
+        }
+
+  }

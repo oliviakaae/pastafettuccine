@@ -1,0 +1,464 @@
+/*Her definerer jeg mine farver*/
+:root {
+  --brown: #362a23;
+  --beige: #bfb497;
+  }
+
+/*Baggrunds-tekstur*/
+body {
+  background: var(--brown);
+  background-image: url("../images/tekstur2.png");
+  background-size: contain;
+  background-repeat: repeat;
+  font-family: 'Lora', serif;
+  }
+
+  /*Logo computer*/
+  .logo img {
+    margin-top: 2%;
+    max-width: 75%;
+    align-items: center;
+    margin-left: -20px;
+    }
+
+  /*Menubar computer*/
+    nav{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Lora', serif;
+  }
+
+    nav li {
+    list-style-type: none;
+    display: inline;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Lora', serif;
+      }
+
+    a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.8);
+    margin: 40px;
+    color: var(--beige);
+    margin-top: 100px;
+    margin: 75px;
+    font-family: 'Lora', serif;
+     }
+
+    a:hover {
+      text-decoration: underline;
+      }
+
+    .line {
+      margin-top: -65px;
+      position: absolute;
+      z-index: -1;
+      }
+
+/*Styling af billedgalleri*/
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  /*laver tre kolloner ved siden af hinanden*/
+  .column {
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 33%;
+    padding: 0  2px;
+  }
+
+  .column img {
+    margin-top: 3px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .column2 {
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 33%;
+    padding: 0  2px;
+  }
+
+  .column2 img {
+    margin-top: 3px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .column9{
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 33%;
+  }
+
+  .column9 img {
+    margin-top: 3px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  /*Styling af h1'ere*/
+  h1 {
+    color: var(--beige);
+    text-decoration: underline;
+    text-align: left;
+    }
+
+  /*Styling af tekst og billede*/
+  .container {
+    margin: 150px auto;
+    width: 75%;
+    padding: 8px;
+  }
+
+  .container img {
+    float: right;
+    max-width: 50%;
+    max-height: 50%;
+    padding: 0 0 0 40px;
+  }
+
+  .text {
+    text-align: justify;
+    color: var(--beige);
+    margin-top: -28px;
+  }
+
+  .text p {
+    text-align: justify;
+    color: var(--beige);
+    font-size: 20px;
+    margin-top: 47px;
+  }
+
+  .container3 {
+    display: none;
+  }
+
+  .text3 {
+    display:none;
+  }
+
+.pynt img {
+  float: left;
+  max-width: 25%;
+  padding-left: 150px;
+  margin-top: -125px;
+  }
+
+  /* Styling af banner */
+.banner {
+  position: relative;
+  margin-top: 400px;
+}
+
+/* Styling af tekstboks i banner */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--brown);
+  color: var(--beige);
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  display: inline;
+  text-align: right;
+  font-size: 20px;
+}
+
+.text-block img {
+  max-width: 10%;
+  float: right;
+  }
+
+/*Indhold til mobil og tablet - skal skjules*/
+.imgmob {
+  display: none;
+  }
+
+.textmob {
+  display: none;
+  }
+
+.logomob {
+  display: none;
+  }
+
+/*Styling af footer*/
+footer {
+  background-color: var(--brown);
+  padding: 50px;
+  text-align: center;
+  color: var(--beige);
+  }
+
+/*Gør billedgalleriet responsivt - to kolloner istedet for tre*/
+@media screen and (max-width: 900px) {
+
+  .container3 {
+    display: block;
+    align-items: center;
+    text-align: center;
+    }
+
+  .text3 img {
+    display: block;
+    padding-left: 90px;
+    margin-top: -20px;
+    }
+
+  .text3 {
+    display: block;
+    }
+
+  .row {
+    }
+
+  .column {
+    flex: 50%;
+    max-width: 49%;
+    margin-top: 75px;
+    margin-left: -10px;
+  }
+
+  .column2 {
+    flex: 50%;
+    max-width: 49%;
+    margin-top: 75px;
+  }
+
+  nav {
+    display: none;
+    }
+
+  .mobmenu {
+    display: block;
+    padding-top: 40px;
+    font-size: 95px;
+    margin-top: 100px;
+    float: left;
+    margin-left: 30px;
+    }
+
+  .container3 {
+    display: block;
+    align-items: center;
+    }
+
+/*Styling af tekst og billede*/
+    .imgmob {
+      display: block;
+      margin-top: 100px;
+      max-width: 100%;
+      margin-left: -10px;
+      }
+
+    .textmob {
+      text-align: left;
+      display: block;
+      margin-top: 100px;
+      color: var(--beige);
+      line-height: 35px;
+      font-size: 30px;
+      padding-left: 10px;
+      padding-right: 30px;
+      }
+
+    .textmob h1 {
+      font-size: 45px;
+      text-align: center;
+      margin-left: -30px;
+    }
+
+  .banner {
+    margin-top: 100px;
+    max-width: 100%;
+    margin-left: -10px;
+    }
+
+  /* Styling af tekstboks i banner */
+  .text-block {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--brown);
+    color: var(--beige);
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    display: inline;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  .text-block img {
+    max-width: 25%;
+    margin-right: 100px;
+    margin-top: -10px;
+    }
+
+/*Skjuler indhold fra computer*/
+
+  .line {
+    display: none;
+    }
+
+  .container {
+    display: none;
+    }
+
+  .column9 {
+    display: none;
+    }
+
+
+/* Gør billedgalleriet responsivt - én kollone istedet for tre*/
+@media screen and (max-width: 600px) {
+
+  .container3 {
+    display: block;
+    align-items: center;
+    margin-top: -90px;
+    margin-left: -20px;
+    font-size: 20px;
+    }
+
+  .mobmenu {
+    display: block;
+    align-items: center;
+    font-size: 50px;
+    }
+
+  .text3 img {
+    display: block;
+    padding-left: 20px;
+    max-width: 100%;
+    margin-top: 45px;
+    margin-left: 80px;
+  }
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    margin-top: 30px;
+    margin-right: -20px;
+  }
+
+  .column2 {
+    display: none;
+  }
+
+  /*Styling af tekst og billede*/
+
+  .imgmob {
+    display: block;
+    margin-top: 75px;
+    max-width: 100%;
+    }
+
+  .textmob {
+    text-align: left;
+    display: block;
+    margin-top: 75px;
+    color: var(--beige);
+    line-height: 20px;
+    font-size: 17px;
+    margin-left: -10px;
+    }
+
+    .textmob h1 {
+      font-size: 17px;
+      text-align: center;
+      line-height: 40px;
+      margin-left: 1px;
+    }
+
+  .banner {
+    margin-top: 75px;
+    }
+
+  /* Styling af tekstboks i banner */
+  .text-block {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--brown);
+    color: var(--beige);
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline;
+    text-align: right;
+    font-size: 10px;
+    font-style: italic;
+  }
+
+  .text-block img {
+    max-width: 20%;
+    margin-right: 50px;
+    margin-top: -25px;
+    }
+
+
+}
+
+/*Skalering til lodret mobilskærm*/
+@media screen and (max-width: 300px) {
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    margin-top: 30px;
+    margin-left: 3px;
+  }
+
+  .textmob {
+    font-size: 15px;
+    margin-left: 1px;
+  }
+
+  .textmob h1 {
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 40px;
+  }
+
+  .imgmob {
+    display: block;
+    margin-top: 75px;
+    max-width: 100%;
+    margin-left: 10px;
+    }
+
+  .banner {
+    margin-top: 100px;
+    max-width: 100%;
+    margin-left: 10px;
+    }
+
+  .text-block {
+    align-items: center;
+    display: inline;
+    text-align: right;
+    font-size: 7px;
+  }
+
+  .text-block img {
+    max-width: 25%;
+    margin-right: 10px;
+    margin-top: -10px;
+    }
+
+  }
