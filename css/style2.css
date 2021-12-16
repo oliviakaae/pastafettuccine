@@ -331,12 +331,14 @@ body {
       .text3 {
         display: block;
         margin-left: 90px;
+        margin-top: -260px;
 
         }
 
       .container3 {
         display: block;
         margin-left: -45px;
+        margin-top: -80px;
       }
 
 /*Skalering af indhold*/
